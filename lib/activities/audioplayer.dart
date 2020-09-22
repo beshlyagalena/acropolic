@@ -1,5 +1,6 @@
 import 'package:acropolic/application/global.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_xlider/flutter_xlider.dart';
 import 'package:acropolic/application/global.dart' as global;
 
 class CusAudioPlayer extends StatelessWidget {
@@ -37,14 +38,14 @@ class CusAudioPlayer extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold, color : Colors.white, fontSize: 20),
                   ),
                   new SizedBox(height: 20,),
-                  new FlutterSlider(
+                  FlutterSlider(
                     values: [300],
                     max: 500,
                     min: 0,
                     onDragging: (handlerIndex, lowerValue, upperValue) {
-                      _lowerValue = lowerValue;
-                      _upperValue = upperValue;
-                      setState(() {});
+//                      _lowerValue = lowerValue;
+//                      _upperValue = upperValue;
+//                      setState(() {});
                     },
                   )
                 ],
